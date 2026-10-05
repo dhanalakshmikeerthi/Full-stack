@@ -1,0 +1,44 @@
+.card{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    background-image:radial-gradient(blue,rgb(30, 202, 224),purple);
+}
+
+
+
+.card1{
+    width:200px;
+    height:200px;
+    background-color:rgb(47, 168, 47);
+    border:1px solid green;
+    box-shadow:5px 5px 10px 10px rgb(105, 238, 23);
+    border-radius:20px;
+    
+
+}
+
+.card2{
+    width:200px;;
+    height:200px;
+    border:1px solid black;
+    background-color:red;
+    opacity:0.2;
+    max-width:100px;
+   
+    
+
+}
+
+.card3{
+    width:30%;
+    height:40px;
+    min-width:20px;
+    border-radius:20px;
+    background-color:yellow;
+
+
+}

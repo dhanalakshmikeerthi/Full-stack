@@ -1,0 +1,19 @@
+h1{
+color : green;
+font-size : 90px;
+font-weight : 800;
+text-align : center;
+text-decoration : underline;
+text-transform : uppercase;
+text-shadow : 10px 10px 7px red;
+}
+
+h2{
+color:blue;
+font-size:90px;
+text-align : center;
+text-transform : uppercase;
+letter-spacing : 10px;
+word-spacing : 10px;
+
+}

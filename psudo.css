@@ -1,0 +1,262 @@
+
+body {
+    width: 100%;
+    height: 100svh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e1b4b,
+        #312e81
+    );
+
+    font-family: Arial, sans-serif;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.demo-1 {
+    width: 130px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition: 
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.demo-1 span {
+    position: relative;
+    z-index: 5;
+
+    transition: 
+        transform 0.4s ease,
+        letter-spacing 0.4s ease;
+}
+
+
+/* =========================
+   BEFORE
+========================= */
+
+.demo-1::before {
+    content: "";
+
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+
+    left: -40px;
+    top: -40px;
+
+    background: #ffeb3b;
+
+    border-radius: 50%;
+
+    opacity: 0.8;
+
+    filter: blur(2px);
+
+    transition: 
+        transform 0.6s ease,
+        width 0.6s ease,
+        height 0.6s ease;
+}
+
+
+/* =========================
+   AFTER
+========================= */
+
+.demo-1::after {
+    content: "";
+
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+
+    right: -40px;
+    bottom: -40px;
+
+    background: #00fff2;
+
+    border-radius: 50%;
+
+    opacity: 0.8;
+
+    filter: blur(2px);
+
+    transition:
+        transform 0.6s ease,
+        width 0.6s ease,
+        height 0.6s ease;
+}
+
+
+/* =========================
+   HOVER BUTTON
+========================= */
+
+.demo-1:hover {
+
+    transform: translateY(-8px) scale(1.05);
+
+    border-color: white;
+
+    box-shadow:
+        0 0 10px #00fff2,
+        0 0 30px #00fff2,
+        0 0 60px rgba(0, 255, 242, 0.5);
+}
+
+
+/* =========================
+   HOVER BEFORE
+========================= */
+
+.demo-1:hover::before {
+
+    width: 180px;
+    height: 180px;
+
+    transform: translate(20px, 20px);
+
+    opacity: 1;
+}
+
+
+/* =========================
+   HOVER AFTER
+========================= */
+
+.demo-1:hover::after {
+
+    width: 180px;
+    height: 180px;
+
+    transform: translate(-20px, -20px);
+
+    opacity: 1;
+}
+
+
+/* =========================
+   HOVER TEXT
+========================= */
+
+.demo-1:hover span {
+
+    transform: scale(1.15);
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   CLICK EFFECT
+========================= */
+
+.demo-1:active {
+
+    transform: translateY(-2px) scale(0.95);
+
+    box-shadow:
+        0 0 10px #00fff2;
+}
+
+
+/* =========================
+   FLOATING ANIMATION
+========================= */
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.demo-1 {
+
+    animation: floating 3s ease-in-out infinite;
+
+}
+
+
+/* =========================
+   GLOW ANIMATION
+========================= */
+
+@keyframes glow {
+
+    0% {
+        box-shadow:
+            0 0 5px rgba(0, 255, 242, 0.3);
+    }
+
+    50% {
+        box-shadow:
+            0 0 20px rgba(0, 255, 242, 0.6),
+            0 0 40px rgba(0, 255, 242, 0.3);
+    }
+
+    100% {
+        box-shadow:
+            0 0 5px rgba(0, 255, 242, 0.3);
+    }
+}
+
+
+.demo-1 {
+    animation:
+        floating 3s ease-in-out infinite,
+        glow 2s ease-in-out infinite;
+}
+

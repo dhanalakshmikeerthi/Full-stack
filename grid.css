@@ -1,0 +1,174 @@
+.demo{
+    height:fit-content;
+    width:fit-content;
+    background-color:white;
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:20px;
+    position:relative;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.x{
+    border:1px solid whitesmoke;
+    height:200px;
+    width:310px;
+    position:relative;
+    border-radius:5px;
+}
+
+
+
+
+.apple{
+    height:2px;
+    width:100%;
+    background-color:green;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    }
+
+    .d1{
+    height:15px;
+    width:15px;
+    background-color:rgb(203, 216, 228);
+    position:absolute;
+    top:15px;
+    left:4px;
+    border-radius:5px;
+
+}
+
+
+.a{
+    
+    color:blue;
+    border-radius:50%;
+    position:absolute;
+    top:4px;
+    left:4px;
+    font-size:6px;
+    text-align:center;
+
+}
+
+
+
+.b{
+    position:absolute;
+    top:5px;
+    left:30px;
+    display:flex;
+    flex-direction:column;
+}
+.c{
+   color:grey;
+}
+.d2{
+   background-color:rgb(184, 202, 219);
+    height:20px;
+    width:150px;
+    border-radius:10px;
+    position:absolute;
+    align-items:center;
+    top: 60px;
+    left:20px;
+}
+
+.d{
+    font-size:9px;
+    color:blue;   
+    text-align:center;   
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    top:5px;
+    left:18px;
+    
+}
+.e{
+    color:grey;
+    font-size:9px;
+    position:absolute;
+    font-family:Arial, Helvetica, sans-serif;
+    top:5px;
+    left:25px;
+
+    
+}
+
+.d3{
+   background-color:white;
+    height:20px;
+    width:90px;
+     gap:5px;
+     border-radius:10px;
+     position:absolute;
+    top: 60px;
+    left:170px;
+}
+
+.f{
+    color:grey;
+    font-size:6px;
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:90px;
+    left:20px;
+    
+
+}
+
+.g{
+    color:black;
+    font-size:10px;
+    position:absolute;
+    top:8px;
+}
+
+.h{
+    width:50px;
+    color:black;    
+    position:absolute;
+    top:5px;
+    left:35px;
+    display:flex;
+    align-items:center;
+    gap:5px;
+
+}
+
+.i{
+    color:white;
+    background-color:blue;
+    display:flex;
+    position:absolute;
+    top:5px;
+    left:32px;
+    gap:20px;
+}
+
+
+.b1{
+    background-color:white;
+    height:30px;
+    width:120px;
+    display:flex;
+    gap:20px;
+    position:absolute;
+    top:150px;
+    left:50px;
+
+}
+.b2{
+    background-color:blue;
+    height:30px;
+    width:120px;
+    border-radius:5px;
+    position:absolute;
+    top:150px;
+    left:170px;
+}
